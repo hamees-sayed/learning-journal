@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em 1em 2em;
+    font-family: 'Roboto', sans-serif;
+}
+
+header h1 {
+    font-size: 0.875rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+}
+
+nav a:hover,
+nav a:focus {
+    color: rgb(101, 24, 112);
+}
+
+ul {
+    font-size: 0.75rem;
+    display: flex;
+    gap: 0.75em;
+    list-style-type: none;
+}
+
+
+/* Main  */
+
+main {
+    position: relative;
+}
+
+main img {
+    width: 100%;
+}
+
+.date {
+    font-size: 0.75rem;
+    margin: 0;
+}
+
+main h1 {
+    font-size: 2rem;
+    margin: 0.25em 0;
+}
+
+main p {
+    margin: 0;
+}
+
+.blog-meta {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    margin: 0 20px 25px 20px;
+}
+
+
+/* Blog Section  */
+
+section {
+    display: grid;
+    padding: 2.125em 1.25em;
+    gap: 20px;
+}
+
+section div img {
+    width: 100%;
+    margin-bottom: 0.875em;
+}
+
+.blog-date {
+    margin: 0 0 0.64em 0;
+    font-size: 0.875rem;
+}
+
+section div h1 {
+    margin: 0 0 0.375em 0;
+}
+
+section div p {
+    margin: 0;
+}
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #202020;
+    color: #ECECEC;
+    font-size: 0.75rem;
+    padding: 3em 12.67em;
+    text-align: center;
+}
+
+footer div p {
+    margin: 0;
+}
+
+.footer-title {
+    margin-bottom: 0.25em;
+    font-weight: 700;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+
+    header h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.25rem;
+    }
+
+    main h1 {
+        font-size: 2.5rem;
+    }
+
+    main img {
+        height: 30.5em;
+    }
+
+    .date {
+        font-size: 1rem;
+    }
+
+    ul {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    section {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+@media (min-width: 1086px) {
+
+    body {
+        width: 1085px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .main-container {
+        background:rgb(241, 240, 240)
+    }
+
+}
